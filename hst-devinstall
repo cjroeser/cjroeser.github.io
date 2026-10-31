@@ -48,7 +48,7 @@ if [ "$OS" == "Ubuntu" ] || [ "$OS" == "Debian" ] || [ "$OS" == "Debian GNU/Linu
         fi
 
 	printf "\nInstalling Hestia Web Interface frontend ...\n"
-	git clone --quiet https://github.com/cdgco/HestiaWebInterface . > /dev/null
+	git clone --quiet https://github.com/cjroeser/HestiaWebInterface . > /dev/null
 
 	if [ -f README.md ] ; then
 		rm README.md
@@ -60,7 +60,7 @@ if [ "$OS" == "Ubuntu" ] || [ "$OS" == "Debian" ] || [ "$OS" == "Debian GNU/Linu
    	chmod 777 tmp
    	chmod 777 plugins/images/uploads
 	printf "Installing Hestia Web Interface backend ...\n"
-	wget -q https://github.com/cdgco/HestiaWebInterface/blob/master/install/hestia.tar.gz?raw=true
+	wget -q https://github.com/cjroeser/HestiaWebInterface/blob/master/install/hestia.tar.gz?raw=true
 	if [ -f hestia.tar.gz?raw=true ] ; then
 		tar -xzf hestia.tar.gz?raw=true -C /usr/local/
 		rm hestia.tar.gz?raw=true
